@@ -85,7 +85,7 @@ name|gzip size(kb)|real size(kb)
 <!-- [markdown-js (Archived)](https://cdn.jsdelivr.net/npm/markdown@0.5.0/lib/markdown.min.js)|6.72(*)|16.29(*) -->
 [showdown](https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js)|24.33|73.9
 
-*: out of date
+<!-- *: out of date -->
 
 ### code high light support
 

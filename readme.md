@@ -41,7 +41,7 @@ node| nodejs v15.7.0
 
 #### case A
 
-```bash
+```
 <===./testdata/showdown/data.txt===>
 Marked#test x 939 ops/sec ±2.01% (90 runs sampled)
 Markdown-it#test x 1,135 ops/sec ±0.42% (95 runs sampled)
@@ -52,7 +52,7 @@ Fastest is Markdown-it#test
 
 #### case B
 
-```bash
+```
 <===./testdata/marked/data.txt===>
 Marked#test x 12,376 ops/sec ±0.82% (97 runs sampled)
 Markdown-it#test x 17,801 ops/sec ±0.43% (97 runs sampled)
@@ -63,7 +63,7 @@ Fastest is Markdown-it#test
 
 #### case C
 
-```bash
+```
 <===./testdata/markdown-it/data.txt===>
 Marked#test x 2,518 ops/sec ±1.35% (95 runs sampled)
 Markdown-it#test x 3,290 ops/sec ±3.32% (92 runs sampled)
@@ -71,3 +71,24 @@ Markdown-js(Archived)#test x 1,230 ops/sec ±1.58% (91 runs sampled)
 Showdown#test x 636 ops/sec ±1.59% (92 runs sampled)
 Fastest is Markdown-it#test
 ```
+
+### lib-size(browser)
+
+test browser: Firefox Dev v86.0b6  
+cdn site:https://www.jsdelivr.com  
+
+name|gzip size(kb)|real size(kb)
+--|--|--
+[marked.min.js](https://cdn.jsdelivr.net/npm/marked/marked.min.js)|15.55|42.85
+[markdown-it](https://cdn.jsdelivr.net/npm/markdown-it@12.0.4/dist/markdown-it.min.js)|33.05|98.25
+[markdown-js (Archived)](https://cdn.jsdelivr.net/npm/markdown@0.5.0/lib/markdown.min.js)|6.72(*)|16.29(*)
+[showdown](https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js)|24.33|73.9
+
+*: out of date
+
+### code high light support
+
++ [Marked](https://github.com/markedjs/marked)
++ [Markdown-it](https://github.com/markdown-it/markdown-it)
++ [Markdown-js (Archived)](https://github.com/evilstreak/markdown-js)
++ [Showdown](https://github.com/showdownjs/showdown)

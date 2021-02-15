@@ -76,19 +76,22 @@ Fastest is Markdown-it#test
 
 test browser: Firefox Dev v86.0b6  
 cdn site:https://www.jsdelivr.com  
+date: 2021 Feb 15th  
 
 name|gzip size(kb)|real size(kb)
 --|--|--
 [marked.min.js](https://cdn.jsdelivr.net/npm/marked/marked.min.js)|15.55|42.85
 [markdown-it](https://cdn.jsdelivr.net/npm/markdown-it@12.0.4/dist/markdown-it.min.js)|33.05|98.25
-[markdown-js (Archived)](https://cdn.jsdelivr.net/npm/markdown@0.5.0/lib/markdown.min.js)|6.72(*)|16.29(*)
+<!-- [markdown-js (Archived)](https://cdn.jsdelivr.net/npm/markdown@0.5.0/lib/markdown.min.js)|6.72(*)|16.29(*) -->
 [showdown](https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js)|24.33|73.9
 
 *: out of date
 
 ### code high light support
 
-+ [Marked](https://github.com/markedjs/marked)
-+ [Markdown-it](https://github.com/markdown-it/markdown-it)
-+ [Markdown-js (Archived)](https://github.com/evilstreak/markdown-js)
-+ [Showdown](https://github.com/showdownjs/showdown)
+
+name|highlight
+--|--
+[Marked](https://github.com/markedjs/marked)|yes
+[Markdown-it](https://github.com/markdown-it/markdown-it)|yes
+[Showdown](https://github.com/showdownjs/showdown)|yes

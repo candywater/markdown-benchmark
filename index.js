@@ -6,19 +6,19 @@ var markdown_js = require("markdown").markdown
 var showdown = require("showdown")
 var showdown_converter = new showdown.Converter()
 
-// 740 lines
+// 740 lines, from their live demo (2021 Feb 15th)
 const TEST_FILE_SHOWDOWNJS = "./testdata/showdown/data.txt"
-// 36 lines
+// 36 lines, from their live demo (2021 Feb 15th)
 const TEST_FILE_MARKED = "./testdata/marked/data.txt"
-// 246 lines
+// 246 lines, from their live demo (2021 Feb 15th)
 const TEST_FILE_MARKDOWN_IT = "./testdata/markdown-it/data.txt"
 
 let test_index = 0;
 
 const TEST_FILES = [
-  TEST_FILE_MARKED,
   TEST_FILE_SHOWDOWNJS,
-  TEST_FILE_MARKDOWN_IT
+  TEST_FILE_MARKED,
+  TEST_FILE_MARKDOWN_IT,
 ]
 
 // test(TEST_FILE_SHOWDOWNJS)

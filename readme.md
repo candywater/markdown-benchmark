@@ -80,7 +80,7 @@ date: 2021 Feb 15th
 
 name|gzip size(kb)|real size(kb)
 --|--|--
-[marked.min.js](https://cdn.jsdelivr.net/npm/marked/marked.min.js)|15.55|42.85
+[marked.min.js](https://cdn.jsdelivr.net/npm/marked@2.0.0/marked.min.js)|15.55|42.85
 [markdown-it](https://cdn.jsdelivr.net/npm/markdown-it@12.0.4/dist/markdown-it.min.js)|33.05|98.25
 [showdown](https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js)|24.33|73.9
 <!-- [markdown-js (Archived)](https://cdn.jsdelivr.net/npm/markdown@0.5.0/lib/markdown.min.js)|6.72(*)|16.29(*) -->

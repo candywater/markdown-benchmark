@@ -29,7 +29,7 @@ callbackCounter();
 function callbackCounter(){
   if(test_index >= TEST_FILES.length)
     return
-  console.log(`<===${TEST_FILES[test_index]}===>`)
+  console.log(`\n<===${TEST_FILES[test_index]}===>`)
   test(TEST_FILES[test_index++])
 }
 

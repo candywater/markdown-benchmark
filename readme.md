@@ -3,7 +3,7 @@
 ### Intro
 
 though there was a benchmark exists, it is do not include markdown-it, and the version it tested was too old.
-I forked it, found it is hard to fix (after upgrade grunt etc, it has a bug),
+I forked it, found it is hard to fix (after upgrade grunt etc, it would have a bug),
 so I decided to open a new repo to benchmark them.
 
 + older benchmard work

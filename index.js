@@ -6,16 +6,34 @@ var markdown_js = require("markdown").markdown
 var showdown = require("showdown")
 var showdown_converter = new showdown.Converter()
 
+// 740 lines
 const TEST_FILE_SHOWDOWNJS = "./testdata/showdown/data.txt"
+// 36 lines
 const TEST_FILE_MARKED = "./testdata/marked/data.txt"
-const TEST_FILE_RANDOM_1000_LINES = "./testdata/showdown/data.txt"
-const TEST_FILE_RANDOM_10000_LINES = "./testdata/showdown/data.txt"
-const TEST_FILE_RANDOM_100000_LINES = "./testdata/showdown/data.txt"
+// 246 lines
+const TEST_FILE_MARKDOWN_IT = "./testdata/markdown-it/data.txt"
 
-// startTest(TEST_FILE_SHOWDOWNJS)
-startTest(TEST_FILE_MARKED)
+let test_index = 0;
 
-function startTest(filename){
+const TEST_FILES = [
+  TEST_FILE_MARKED,
+  TEST_FILE_SHOWDOWNJS,
+  TEST_FILE_MARKDOWN_IT
+]
+
+// test(TEST_FILE_SHOWDOWNJS)
+// test(TEST_FILE_MARKED)
+
+callbackCounter();
+
+function callbackCounter(){
+  if(test_index >= TEST_FILES.length)
+    return
+  console.log(`<===${TEST_FILES[test_index]}===>`)
+  test(TEST_FILES[test_index++])
+}
+
+function test(filename){
   var data = ""
   try {
     data = fs.readFileSync(filename, 'utf8')
@@ -47,6 +65,7 @@ function testSuite(data){
   })
   .on('complete', function() {
     console.log('Fastest is ' + this.filter('fastest').map('name'));
+    callbackCounter();
   })
   // run async
   .run({ 'async': true });

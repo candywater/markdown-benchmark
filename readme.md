@@ -2,9 +2,10 @@
 
 ### Intro
 
-though there was a benchmark exists, it is do not include markdown-it, and the version it tested was too old.
-I forked it, found it is hard to fix (after upgrade grunt etc, it would have a bug),
-so I decided to open a new repo to benchmark them.
+Though there was a benchmark, it do not include markdown-it, and the versions it tested were too old.
+I forked it, and found it is hard to upgrade to newer version
+(after upgrade grunt, coffeescript and etc, it would have a bug, and really hard to fix it),
+so I decided to open a new benchmark fro them.
 
 + older benchmard work
 [https://github.com/mpneuried/markdown-benchmark](https://github.com/mpneuried/markdown-benchmark)

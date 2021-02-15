@@ -1,0 +1,10 @@
+{
+  "name": "md-benchmark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "cw <cw@github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "benchmark": "^2.1.4"
+  }
+}
